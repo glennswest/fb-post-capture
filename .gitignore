@@ -3,3 +3,5 @@ node_modules/
 *.png
 cookies
 .config.*
+Google_Vision_API*
+package-lock.json
