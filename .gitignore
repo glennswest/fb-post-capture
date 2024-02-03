@@ -5,3 +5,4 @@ cookies
 .config.*
 Google_Vision_API*
 package-lock.json
+.setup.sh

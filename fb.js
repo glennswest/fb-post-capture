@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const puppeteer = require('puppeteer');
-const devices = require('puppeteer/DeviceDescriptors');
+const devices = puppeteer.devices;
 const argv = require('minimist')(process.argv.slice(2));
 const authenticator = require('authenticator');
 const Jimp = require("jimp");
@@ -44,7 +44,7 @@ const twofakey = argv.fb2fakey || process.env.FB_2FA_KEY;
 
     // home page
     await page.goto('https://m.facebook.com/', {
-        waitUntil: 'networkidle'
+        waitUntil: 'networkidle0'
     });
 
     // login detected
